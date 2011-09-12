@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<payroll>
+  <company>
+    <name>J and T van Zutphen Construction Inc.</name>
+    <address>PO Box 130, Port Hood, NS
+      BOE 2W0</address>
+  </company>
+  <period_beginning_date>2011-09-12</period_beginning_date>
+  <period_ending_date>2011-09-17</period_ending_date>
+  <pay_date>2011-09-17</pay_date>
+  <employee id="000001">
+    <name>John Doe</name>
+    <net_pay>600.00</net_pay>
+    <address>RR#1, Port Hood, NS
+      BOE 2W0</address>
+    <email>john.doe@zutphen.ca</email>
+    <memo></memo>
+    <employee_earnings>
+      <earning>
+        <name>Regular Time</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Heavy Civil</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Commercial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Industrial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Mainland</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Overtime</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Non Taxable Benefits</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Vacation for Union</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <total>
+        <hours>200</hours>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_earnings>
+    <employee_deductions>
+      <deduction>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Vacation Accrual for Non Union (8% annual)</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Income Tax</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Benefits</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Training</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Consol. Fund</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_deductions>
+    <employer_contributions>
+      <contribution>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>WCB</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employer_contributions>
+  </employee>
+  <employee id="000002">
+    <name>John Smith</name>
+    <net_pay>600.00</net_pay>
+    <address>RR#1, Port Hood, NS
+      BOE 2W0</address>
+    <email>john.smith@zutphen.ca</email>
+    <memo></memo>
+    <employee_earnings>
+      <earning>
+        <name>Regular Time</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Heavy Civil</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Commercial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Industrial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Mainland</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Overtime</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Non Taxable Benefits</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Vacation for Union</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <total>
+        <hours>200</hours>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_earnings>
+    <employee_deductions>
+      <deduction>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Vacation Accrual for Non Union (8% annual)</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Income Tax</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Benefits</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Training</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Consol. Fund</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_deductions>
+    <employer_contributions>
+      <contribution>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>WCB</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employer_contributions>
+  </employee>
+  <employee id="000003">
+    <name>John Cameron</name>
+    <net_pay>600.00</net_pay>
+    <address>RR#1, Port Hood, NS
+      BOE 2W0</address>
+    <email>john.cameron@zutphen.ca</email>
+    <memo></memo>
+    <employee_earnings>
+      <earning>
+        <name>Regular Time</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Heavy Civil</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Commercial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Industrial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Mainland</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Overtime</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Non Taxable Benefits</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Vacation for Union</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <total>
+        <hours>200</hours>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_earnings>
+    <employee_deductions>
+      <deduction>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Vacation Accrual for Non Union (8% annual)</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Income Tax</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Benefits</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Training</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Consol. Fund</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_deductions>
+    <employer_contributions>
+      <contribution>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>WCB</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employer_contributions>
+  </employee>
+  <employee id="000004">
+    <name>John Graham</name>
+    <net_pay>600.00</net_pay>
+    <address>RR#1, Port Hood, NS
+      BOE 2W0</address>
+    <email>john.graham@zutphen.ca</email>
+    <memo></memo>
+    <employee_earnings>
+      <earning>
+        <name>Regular Time</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Heavy Civil</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Commercial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Industrial</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Mainland</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Overtime</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Non Taxable Benefits</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <earning>
+        <name>Vacation for Union</name>
+        <rate>50.00</rate>
+        <hours>20.0</hours>
+        <current>$1000.00</current>
+        <year_to_date>15000.00</year_to_date>
+      </earning>
+      <total>
+        <hours>200</hours>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_earnings>
+    <employee_deductions>
+      <deduction>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Vacation Accrual for Non Union (8% annual)</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Income Tax</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Benefits</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Union Training</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <deduction>
+        <name>Consol. Fund</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </deduction>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employee_deductions>
+    <employer_contributions>
+      <contribution>
+        <name>Zutphen Pension Contribution</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Blue Cross</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>Canada Pension</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>EI</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <contribution>
+        <name>WCB</name>
+        <current>100.00</current>
+        <year_to_date>200.00</year_to_date>
+      </contribution>
+      <total>
+        <current>40.5</current>
+        <year_to_date>100</year_to_date>
+      </total>
+    </employer_contributions>
+  </employee>
+</payroll>
