@@ -12,6 +12,8 @@ module NavigationHelpers
       '/'
     when /^the new user page$/
       new_user_path
+    when /^the new payroll page$/
+      new_payroll_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

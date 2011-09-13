@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <payroll template_version="1.0">
+  <period_beginning_date>2011-09-12</period_beginning_date>
+  <period_ending_date>2011-09-17</period_ending_date>
   <company>
     <name>J and T van Zutphen Construction Inc.</name>
     <short_name>Zutphen Construction</short_name>
     <address>PO Box 130, Port Hood, NS
       BOE 2W0</address>
   </company>
-  <period_beginning_date>2011-09-12</period_beginning_date>
-  <period_ending_date>2011-09-17</period_ending_date>
   <pay_date>2011-09-17</pay_date>
   <employee id="000001">
     <name>John Doe</name>

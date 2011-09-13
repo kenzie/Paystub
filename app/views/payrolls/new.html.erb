@@ -1,0 +1,6 @@
+<%= form_for @payroll, :url => payrolls_path, :html => { :multipart => true } do |f| -%>
+<%= render "shared/error_messages", :target => @payroll %>
+  <%= f.label :data %>
+  <%= f.file_field :data %>
+  <%= f.submit "Create Payroll" %>
+<% end -%>

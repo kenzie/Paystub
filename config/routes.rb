@@ -1,5 +1,7 @@
 Paystub::Application.routes.draw do
 
+  resources :payrolls
+
   resource :user
   resources :sessions
   get "sign-out" => "sessions#destroy", :as => "sign_out"
