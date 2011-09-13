@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<payroll>
+<payroll template_version="1.0">
   <company>
     <name>J and T van Zutphen Construction Inc.</name>
+    <short_name>Zutphen Construction</short_name>
     <address>PO Box 130, Port Hood, NS
       BOE 2W0</address>
   </company>
