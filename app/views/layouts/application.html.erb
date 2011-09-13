@@ -8,6 +8,20 @@
 </head>
 <body>
 
+<div id="session">
+  <% if current_user %>
+    Signed in as <%= current_user.email %>.
+    <%= link_to "Sign out", sign_out_path %>
+  <% else %>
+    <%= link_to "Sign up", sign_up_path %> or
+    <%= link_to "Sign in", sign_in_path %>
+  <% end %>
+</div>
+
+<% flash.each do |key, msg| %>
+    <%= content_tag :div, msg, :class => "flash #{key}" %>
+<% end %>
+
 <%= yield %>
 
 </body>

@@ -13,6 +13,7 @@ group :development, :test do
 	gem 'sqlite3'
 	gem 'cucumber-rails'
 	gem 'database_cleaner'
+  gem 'autotest-rails'
   # gem 'rspec-rails'
 end
 
