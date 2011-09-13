@@ -1,6 +1,7 @@
 class CreatePayrolls < ActiveRecord::Migration
   def change
     create_table :payrolls do |t|
+      t.references :user
       t.date :pay_day
       t.string :data_file_name
       t.string :data_content_type

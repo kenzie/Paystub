@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  has_many :payrolls
+
   has_secure_password
 
   attr_accessible :name, :email, :password

@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(:version => 20110913122131) do
 
   create_table "payrolls", :force => true do |t|
+    t.integer  "user_id"
     t.date     "pay_day"
     t.string   "data_file_name"
     t.string   "data_content_type"

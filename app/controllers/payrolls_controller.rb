@@ -1,19 +1,19 @@
 class PayrollsController < ApplicationController
 
   def index
-    @payrolls = Payroll.all
+    @payrolls = current_user.payrolls.all
   end
 
   def show
-    @payroll = Payroll.find(params[:id])
+    @payroll = current_user.payrolls.find(params[:id])
   end
 
   def new
-    @payroll = Payroll.new
+    @payroll = current_user.payrolls.new
   end
 
   def create
-    @payroll = Payroll.new(params[:payroll])
+    @payroll = current_user.payrolls.new(params[:payroll])
     if @payroll.save
       redirect_to payroll_path(@payroll), :notice => "Created new payroll for Zutphen Construction"
     else

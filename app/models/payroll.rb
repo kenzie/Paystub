@@ -1,10 +1,14 @@
 class Payroll < ActiveRecord::Base
 
+  belongs_to :user
+
   has_attached_file :data, :url => '/system/:class/:attachment/:id.:extension'
 
   validates_attachment_presence :data
   validates_attachment_content_type :data, :content_type => [ 'text/xml', 'application/xml' ]
   validates_attachment_size :data, :less_than => 2.megabytes
+
+  validate :user_id, :presence => true
 
   # TODO validate data format on upload
 
