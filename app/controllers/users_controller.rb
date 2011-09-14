@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def new
-    redirect_to admin_path if admin?
+    redirect_to payrolls_path if admin?
     @user = User.new
   end
 
@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       session[:user_id] = @user.id
-      redirect_to admin_path, :notice => "Created new account for #{@user.name}"
+      redirect_to payrolls_path, :notice => "Created new account for #{@user.name}"
     else
       render :action => :new
     end

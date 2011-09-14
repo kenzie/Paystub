@@ -15,7 +15,7 @@ private
   helper_method :admin?
 
   def require_admin
-    redirect_to new_session_path, :notice => 'You must sign in' unless admin?
+    redirect_to sing_in_path, :notice => 'You must sign in' unless admin?
   end
 
 end
