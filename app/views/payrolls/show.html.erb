@@ -1,2 +1,12 @@
 <h2><%= link_to 'Payrolls', payrolls_path %>: <%= @payroll.pay_day %>, <%= @payroll.company %></h2>
 
+<table>
+  <thead>
+    <tr><th>ID</th><th>Name</th><th></th></tr>
+  </thead>
+  <tbody>
+<%- @payroll.employees.each do |employee| -%>
+    <tr><td><%= employee[:id] %></td><td><%= employee[:name] %></td></tr>
+<%- end -%>
+  </tbody>
+</table>

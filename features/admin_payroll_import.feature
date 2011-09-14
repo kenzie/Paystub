@@ -13,3 +13,7 @@ Feature: Administrator Payroll Import
     And I press "Create Payroll"
     Then I should see "Created new payroll for Zutphen Construction"
     And I should see "2011-09-17"
+    And I should see "John Doe"
+    And I should see "John Smith"
+    And I should see "John Cameron"
+    And I should see "John Graham"
