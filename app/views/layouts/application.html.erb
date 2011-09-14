@@ -9,7 +9,7 @@
 <body>
 
 <% unless controller_name == 'sessions' %>
-<div id="session">
+<div class="session">
   <% if current_user %>
     Signed in as <%= current_user.email %>.
     <%= link_to "Sign out", sign_out_path %>
@@ -18,6 +18,8 @@
   <% end %>
 </div>
 <%- end -%>
+
+<h1>Paystub Application</h1>
 
 <% flash.each do |key, msg| %>
     <%= content_tag :div, msg, :class => "flash #{key}" %>
