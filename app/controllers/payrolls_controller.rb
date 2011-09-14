@@ -1,5 +1,7 @@
 class PayrollsController < ApplicationController
 
+  before_filter :admin_required
+
   def index
     @payrolls = current_user.payrolls.all
   end

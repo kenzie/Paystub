@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       session[:user_id] = @user.id
-      redirect_to dashboard_path, :notice => "Created new account for #{@user.name}"
+      redirect_to admin_path, :notice => "Created new account for #{@user.name}"
     else
       render :action => :new
     end

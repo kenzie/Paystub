@@ -8,8 +8,7 @@ Paystub::Application.routes.draw do
   get "sign-in" => "sessions#new", :as => "sign_in"
   get "sign-up" => "users#new", :as => "sign_up"
 
-  match 'dashboard' => 'dashboard#welcome'
-
-  root :to => 'dashboard#welcome'
+  match 'admin' => 'admin#welcome'
+  root :to => 'users#new'
 
 end
