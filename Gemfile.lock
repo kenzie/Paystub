@@ -158,6 +158,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   jquery-rails
+  nokogiri
   paperclip
   rails (= 3.1.0)
   sass-rails (~> 3.1.0)

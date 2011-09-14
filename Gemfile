@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0'
 gem 'jquery-rails'
 gem 'paperclip'
+gem 'nokogiri'
 
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"

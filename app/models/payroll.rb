@@ -11,18 +11,22 @@ class Payroll < ActiveRecord::Base
   validate :user_id, :presence => true
 
   # TODO validate data format on upload
-
-  after_save :set_pay_day
+  
+  after_save :set_company_and_pay_day_from_data
 
 private
 
-  # get period_ending_date from data file
-  def set_pay_day
-    File.open(data.path) do |file|
-      line = ''
-      line = file.gets until line.match(/<period_ending_date>(.*)<\/period_ending_date>/)
+  def set_company_and_pay_day_from_data
+    logger.debug "[Payroll] Reading payroll XML file #{data.path}"
+    doc = Nokogiri::XML(File.open(data.path), nil, 'UTF-8')
+    attribs = {
+      :pay_day => doc.xpath('/payroll/period_ending_date').first.content,
+      :company => doc.xpath('/payroll/company/short_name').first.content
+    }
+    if self.pay_day != Date.parse(attribs[:pay_day]) || self.company != attribs[:company]
+      logger.debug "[Payroll] Saving payroll record for #{attribs[:company]}"
+      self.update_attributes(attribs)
     end
-    self.update_attribute(:pay_day, $~[1]) if self.pay_day != Date.parse($~[1])
   end
 
 end
