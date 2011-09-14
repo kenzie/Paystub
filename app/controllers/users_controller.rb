@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
   def new
+    redirect_to admin_path if admin?
     @user = User.new
   end
 

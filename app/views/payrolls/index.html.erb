@@ -1,1 +1,14 @@
 <h2>Payrolls</h2>
+
+<p><%= link_to 'New Payroll', new_payroll_path %></p>
+
+<table>
+  <thead>
+    <tr><th>Pay Day</th><th>Company</th><th></th></tr>
+  </thead>
+  <tbody>
+<%- @payrolls.each do |payroll| -%>
+    <tr><td><%= payroll.pay_day %></td><td><%= payroll.company %></td><td><%= link_to 'Review', payroll_path(payroll) %></td></tr>
+<%- end -%>
+  </tbody>
+</table>
