@@ -1,6 +1,6 @@
 class AdminController < ApplicationController
 
-  before_filter :admin_required
+  before_filter :require_admin
 
   def welcome
     

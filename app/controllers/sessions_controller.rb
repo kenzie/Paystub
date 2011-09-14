@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
-  before_filter :admin_required, :only => :destroy
+  before_filter :require_admin, :only => :destroy
 
   def create
     user = User.find_by_email(params[:email])
