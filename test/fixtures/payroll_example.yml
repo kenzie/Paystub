@@ -1,0 +1,446 @@
+---
+payroll:
+  template_version: '1.0'
+  generated_at: '2011-09-15 00:00:00 UTC'
+  period_beginning_date: '2011-09-12'
+  period_ending_date: '2011-09-17'
+  company:
+    name: J and T van Zutphen Construction Inc.
+    short_name: Zutphen Construction
+    address: ! \"PO Box 130, Port Hood, NS\
+      BOE 2W0\"
+  pay_date: '2011-09-17'
+  employee:
+  - id: '000001'
+    name: John Doe
+    net_pay: '600.00'
+    address: ! \"RR#1, Port Hood, NS\
+      BOE 2W0\"
+    email: john.doe@zutphen.ca
+    memo: !!null 
+    employee_earnings:
+      earning:
+      - name: Regular Time
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Heavy Civil
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Commercial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Industrial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Mainland
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Overtime
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Non Taxable Benefits
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Vacation for Union
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      total:
+        hours: '200'
+        current: '40.5'
+        year_to_date: '100'
+    employee_deductions:
+      deduction:
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Vacation Accrual for Non Union (8% annual)
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Income Tax
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Benefits
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Training
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Consol. Fund
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+    employer_contributions:
+      contribution:
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: WCB
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+  - id: '000002'
+    name: John Smith
+    net_pay: '600.00'
+    address: ! \"RR#1, Port Hood, NS\
+      BOE 2W0\"
+    email: john.smith@zutphen.ca
+    memo: !!null 
+    employee_earnings:
+      earning:
+      - name: Regular Time
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Heavy Civil
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Commercial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Industrial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Mainland
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Overtime
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Non Taxable Benefits
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Vacation for Union
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      total:
+        hours: '200'
+        current: '40.5'
+        year_to_date: '100'
+    employee_deductions:
+      deduction:
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Vacation Accrual for Non Union (8% annual)
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Income Tax
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Benefits
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Training
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Consol. Fund
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+    employer_contributions:
+      contribution:
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: WCB
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+  - id: '000003'
+    name: John Cameron
+    net_pay: '600.00'
+    address: ! \"RR#1, Port Hood, NS\
+      BOE 2W0\"
+    email: john.cameron@zutphen.ca
+    memo: !!null 
+    employee_earnings:
+      earning:
+      - name: Regular Time
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Heavy Civil
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Commercial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Industrial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Mainland
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Overtime
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Non Taxable Benefits
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Vacation for Union
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      total:
+        hours: '200'
+        current: '40.5'
+        year_to_date: '100'
+    employee_deductions:
+      deduction:
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Vacation Accrual for Non Union (8% annual)
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Income Tax
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Benefits
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Training
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Consol. Fund
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+    employer_contributions:
+      contribution:
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: WCB
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+  - id: '000004'
+    name: John Graham
+    net_pay: '600.00'
+    address: ! \"RR#1, Port Hood, NS\
+      BOE 2W0\"
+    email: john.graham@zutphen.ca
+    memo: !!null 
+    employee_earnings:
+      earning:
+      - name: Regular Time
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Heavy Civil
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Commercial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Industrial
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Mainland
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Overtime
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Non Taxable Benefits
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      - name: Vacation for Union
+        rate: '50.00'
+        hours: '20.0'
+        current: $1000.00
+        year_to_date: '15000.00'
+      total:
+        hours: '200'
+        current: '40.5'
+        year_to_date: '100'
+    employee_deductions:
+      deduction:
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Vacation Accrual for Non Union (8% annual)
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Income Tax
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Benefits
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Union Training
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Consol. Fund
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+    employer_contributions:
+      contribution:
+      - name: Zutphen Pension Contribution
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Blue Cross
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: Canada Pension
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: EI
+        current: '100.00'
+        year_to_date: '200.00'
+      - name: WCB
+        current: '100.00'
+        year_to_date: '200.00'
+      total:
+        current: '40.5'
+        year_to_date: '100'
+

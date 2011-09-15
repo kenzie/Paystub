@@ -34,13 +34,10 @@ private
   end
 
   def parse_employees_xml
-    xml = Nokogiri::XML(File.open(data.path), nil, 'UTF-8')
+    doc = Hash.from_xml(File.open(data.path))
     employees = []
-    xml.xpath('//payroll/employee').each do |employee_xml|
-      employees << {
-        :id => employee_xml[:id],
-        :name => employee_xml.xpath('name').first.content
-      }
+    doc['payroll']['employee'].each do |employee|
+      employees << employee
     end
     employees
   end
