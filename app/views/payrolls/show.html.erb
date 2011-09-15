@@ -6,7 +6,7 @@
   </thead>
   <tbody>
 <%- @payroll.employees.each do |employee| -%>
-    <tr><td><%= employee[:id] %></td><td><%= employee[:name] %></td></tr>
+    <tr><td><%= employee['id'] %></td><td><%= employee['name'] %></td></tr>
 <%- end -%>
   </tbody>
 </table>
