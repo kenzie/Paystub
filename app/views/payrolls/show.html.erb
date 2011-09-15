@@ -1,5 +1,7 @@
 <h2><%= link_to 'Payrolls', payrolls_path %>: <%= @payroll.pay_day %>, <%= @payroll.company %></h2>
 
+<p><%= pluralize(@payroll.employees.size, 'Paystub') %></p>
+
 <table>
   <thead>
     <tr><th>ID</th><th>Name</th><th></th></tr>
