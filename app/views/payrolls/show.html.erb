@@ -4,11 +4,22 @@
 
 <table>
   <thead>
-    <tr><th>ID</th><th>Name</th><th></th></tr>
+    <tr><th>ID</th><th>Name</th><th>Net Pay</th><th>Current Earnings</th><th>Current Deductions</th><th>Current Contributions</th><th>YTD Earnings</th><th>YTD Deductions</th><th>YTD Contributions</th></tr>
   </thead>
   <tbody>
 <%- @payroll.employees.each do |employee| -%>
-    <tr><td><%= employee['id'] %></td><td><%= employee['name'] %></td></tr>
+    <tr>
+      <td><%= employee['id'] %></td>
+      <td><%= employee['name'] %></td>
+      <td><%= number_to_currency employee['net_pay'].to_f %></td>
+      <td><%= number_to_currency employee_amount(employee, 'employee_earnings', 'earning', 'current') %></td>
+      <td><%= number_to_currency employee_amount(employee, 'employee_deductions', 'deduction', 'current') %></td>
+      <td><%= number_to_currency employee_amount(employee, 'employer_contributions', 'contribution', 'current') %></td>
+      <td><%= number_to_currency employee_amount(employee, 'employee_earnings', 'earning', 'year_to_date') %></td>
+      <td><%= number_to_currency employee_amount(employee, 'employee_deductions', 'deduction', 'year_to_date') %></td>
+      <td><%= number_to_currency employee_amount(employee, 'employer_contributions', 'contribution', 'year_to_date') %></td>
+
+    </tr>
 <%- end -%>
   </tbody>
 </table>
