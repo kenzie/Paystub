@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <payroll template_version="1.0">
-  <generated_at>2011-09-15 00:00:00 UTC</generated_at>
+  <imported_at>2011-09-15 00:00:00 UTC</imported_at>
   <period_beginning_date>2011-09-12</period_beginning_date>
   <period_ending_date>2011-09-17</period_ending_date>
   <company>
