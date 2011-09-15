@@ -76,8 +76,8 @@
       </earning>
       <total>
         <hours>200</hours>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_earnings>
     <employee_deductions>
@@ -132,8 +132,8 @@
         <year_to_date>200.00</year_to_date>
       </deduction>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_deductions>
     <employer_contributions>
@@ -163,8 +163,8 @@
         <year_to_date>200.00</year_to_date>
       </contribution>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employer_contributions>
   </employee>
@@ -234,8 +234,8 @@
       </earning>
       <total>
         <hours>200</hours>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_earnings>
     <employee_deductions>
@@ -290,8 +290,8 @@
         <year_to_date>200.00</year_to_date>
       </deduction>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_deductions>
     <employer_contributions>
@@ -321,8 +321,8 @@
         <year_to_date>200.00</year_to_date>
       </contribution>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employer_contributions>
   </employee>
@@ -392,8 +392,8 @@
       </earning>
       <total>
         <hours>200</hours>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_earnings>
     <employee_deductions>
@@ -448,8 +448,8 @@
         <year_to_date>200.00</year_to_date>
       </deduction>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_deductions>
     <employer_contributions>
@@ -479,8 +479,8 @@
         <year_to_date>200.00</year_to_date>
       </contribution>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employer_contributions>
   </employee>
@@ -550,8 +550,8 @@
       </earning>
       <total>
         <hours>200</hours>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_earnings>
     <employee_deductions>
@@ -606,8 +606,8 @@
         <year_to_date>200.00</year_to_date>
       </deduction>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employee_deductions>
     <employer_contributions>
@@ -637,8 +637,8 @@
         <year_to_date>200.00</year_to_date>
       </contribution>
       <total>
-        <current>40.5</current>
-        <year_to_date>100</year_to_date>
+        <current>5000.00</current>
+        <year_to_date>5000.00</year_to_date>
       </total>
     </employer_contributions>
   </employee>
