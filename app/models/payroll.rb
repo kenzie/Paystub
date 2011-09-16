@@ -33,13 +33,9 @@ private
   def get_and_build_stubs_from_data!
     data_hash['payroll']['employee'].each do |employee|
       employee['payroll_id'] = id
-      logger.debug "[payroll] Creating stub for #{pay_day}: #{employee['name']}"
+      logger.debug "[payroll] Creating stub for #{company}, #{pay_day}: #{employee['name']}"
       Stub.create(employee)
     end
-
-    # xml.xpath('/payroll/employee').each do |employee|
-    #   logger.debug Hash.from_xml(File.open(data.current_path))
-    # end
   end
 
 end
