@@ -1,45 +1,27 @@
 class Payroll < ActiveRecord::Base
 
   belongs_to :user
+  has_many :stubs
 
-  has_attached_file :data, :url => '/system/:class/:attachment/:id.:extension'
-
-  validates_attachment_presence :data
-  validates_attachment_content_type :data, :content_type => [ 'text/xml', 'application/xml' ]
-  validates_attachment_size :data, :less_than => 2.megabytes
+  mount_uploader :data, PayrollUploader
 
   validate :user_id, :presence => true
 
-  # TODO validate data format on upload
-  
-  after_save :set_company_and_pay_day_from_data
-
-  def employees
-    @employees ||= parse_employees_xml
+  def parse
+    get_and_set_company_and_pay_day_from_data!
+    # create stubs from data
+    # return false and add errors to data on parse errors
   end
 
 private
 
-  def set_company_and_pay_day_from_data
-    logger.debug "[Payroll] Reading payroll XML file #{data.path}"
+  def get_and_set_company_and_pay_day_from_data!
+    logger.debug "[payroll] Reading payroll data file #{data.current_path}"
     xml = Nokogiri::XML(File.open(data.path), nil, 'UTF-8')
-    attribs = {
-      :pay_day => xml.xpath('/payroll/period_ending_date').first.content,
-      :company => xml.xpath('/payroll/company/short_name').first.content
-    }
-    if self.pay_day != Date.parse(attribs[:pay_day]) || self.company != attribs[:company]
-      logger.debug "[Payroll] Saving payroll record for #{attribs[:company]}"
-      self.update_attributes(attribs)
-    end
-  end
-
-  def parse_employees_xml
-    doc = Hash.from_xml(File.open(data.path))
-    employees = []
-    doc['payroll']['employee'].each do |employee|
-      employees << employee
-    end
-    employees
+    self.pay_day = xml.xpath('/payroll/period_ending_date').first.content
+    self.company = xml.xpath('/payroll/company/short_name').first.content
+    logger.debug "[payroll] Saving payroll record for #{company}"
+    self.save
   end
 
 end

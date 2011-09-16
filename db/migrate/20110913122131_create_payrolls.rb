@@ -4,10 +4,7 @@ class CreatePayrolls < ActiveRecord::Migration
       t.references :user
       t.string :company
       t.date :pay_day
-      t.string :data_file_name
-      t.string :data_content_type
-      t.integer :data_file_size
-      t.datetime :data_updated_at
+      t.string :data
 
       t.timestamps
     end

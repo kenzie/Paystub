@@ -14,7 +14,7 @@ class PayrollsController < AdminController
 
   def create
     @payroll = current_user.payrolls.new(params[:payroll])
-    if @payroll.save
+    if @payroll.save && @payroll.parse
       redirect_to payroll_path(@payroll), :notice => "Created new payroll for #{@payroll.company}"
     else
       render :action => :new

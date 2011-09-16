@@ -2,7 +2,9 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
 gem 'jquery-rails'
-gem 'paperclip'
+gem 'mongo_mapper'
+gem 'bson_ext'
+gem 'carrierwave'
 gem 'nokogiri'
 
 group :assets do

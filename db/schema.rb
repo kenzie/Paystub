@@ -17,10 +17,7 @@ ActiveRecord::Schema.define(:version => 20110913122131) do
     t.integer  "user_id"
     t.string   "company"
     t.date     "pay_day"
-    t.string   "data_file_name"
-    t.string   "data_content_type"
-    t.integer  "data_file_size"
-    t.datetime "data_updated_at"
+    t.string   "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
