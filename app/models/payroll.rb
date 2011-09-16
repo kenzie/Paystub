@@ -25,7 +25,7 @@ private
 
   def get_and_set_company_and_pay_day_from_data!
     self.pay_day = data_hash['payroll']['pay_date']
-    self.company = data_hash['payroll']['company']['short_name']
+    self.company = data_hash['payroll']['company']['short_name'] || data_hash['payroll']['company']['name']
     logger.debug "[payroll] Saving payroll record for #{company}, #{pay_day}"
     self.save
   end
