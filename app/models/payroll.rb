@@ -5,6 +5,8 @@ class Payroll < ActiveRecord::Base
   mount_uploader :data, PayrollUploader
 
   validate :user_id, :presence => true
+  validate :company, :presence => true, :on => :update
+  validate :pay_day, :presence => true, :on => :update
 
   def parse
     get_and_set_company_and_pay_day_from_data!
