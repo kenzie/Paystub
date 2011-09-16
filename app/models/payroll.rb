@@ -8,6 +8,8 @@ class Payroll < ActiveRecord::Base
   validate :company, :presence => true, :on => :update
   validate :pay_day, :presence => true, :on => :update
 
+  before_destroy :destroy_dependent_stubs
+
   def parse
     get_and_set_company_and_pay_day_from_data!
     get_and_build_stubs_from_data!
@@ -16,6 +18,10 @@ class Payroll < ActiveRecord::Base
 
   def stubs
     Stub.where(:payroll_id => id)
+  end
+
+  def stubs?
+    stubs.size > 0
   end
 
 private
@@ -38,6 +44,10 @@ private
       logger.debug "[payroll] Creating stub for #{company}, #{pay_day}: #{employee['name']}"
       Stub.create(employee)
     end
+  end
+
+  def destroy_dependent_stubs
+    stubs.each { |s| s.destroy }
   end
 
 end
