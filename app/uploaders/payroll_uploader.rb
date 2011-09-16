@@ -23,7 +23,7 @@ class PayrollUploader < CarrierWave::Uploader::Base
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
   def filename
-    "#{model.id}.#{file.extension}" if original_filename
+    "#{model.user.id}/#{model.id}.#{file.extension}" if original_filename
   end
 
 end
