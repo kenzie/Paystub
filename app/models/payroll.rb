@@ -18,22 +18,20 @@ class Payroll < ActiveRecord::Base
 
 private
 
-  def xml
-    @xml ||= Nokogiri::XML(File.open(data.path), nil, 'UTF-8')
+  def data_hash
+    logger.debug "[payroll] Reading payroll data file #{data.current_path}"
+    @data_hash ||= Hash.from_xml(File.open(data.current_path))
   end
 
   def get_and_set_company_and_pay_day_from_data!
-    logger.debug "[payroll] Reading payroll data file #{data.current_path}"
-    self.pay_day = xml.xpath('/payroll/period_ending_date').first.content
-    self.company = xml.xpath('/payroll/company/short_name').first.content
-    logger.debug "[payroll] Saving payroll record for #{company}"
+    self.pay_day = data_hash['payroll']['pay_date']
+    self.company = data_hash['payroll']['company']['short_name']
+    logger.debug "[payroll] Saving payroll record for #{company}, #{pay_day}"
     self.save
   end
 
   def get_and_build_stubs_from_data!
-    logger.debug "[payroll] Reading payroll data file #{data.current_path}"
-    h = Hash.from_xml(File.open(data.current_path))
-    h['payroll']['employee'].each do |employee|
+    data_hash['payroll']['employee'].each do |employee|
       employee['payroll_id'] = id
       logger.debug "[payroll] Creating stub for #{pay_day}: #{employee['name']}"
       Stub.create(employee)

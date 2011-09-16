@@ -5,7 +5,6 @@ gem 'jquery-rails'
 gem 'mongo_mapper'
 gem 'bson_ext'
 gem 'carrierwave'
-gem 'nokogiri'
 
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"

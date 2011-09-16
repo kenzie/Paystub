@@ -167,7 +167,6 @@ DEPENDENCIES
   database_cleaner
   jquery-rails
   mongo_mapper
-  nokogiri
   rails (= 3.1.0)
   sass-rails (~> 3.1.0)
   sqlite3
